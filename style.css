@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message.sent {
+    background-color: #d3e9f8;
+  }
+  
+  #message-input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  #message-input:focus {
+    outline: none;
+  }
+  
+  .send-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .bubble {
+    position: absolute;
+    background-color: #007bff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  .bubble:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .bubble:nth-child(2) {
+    left: 20%;
+    animation-delay: 0.5s;
+  }
+  
+  .bubble:nth-child(3) {
+    left: 30%;
+    animation-delay: 1s;
+  }
+  
+  .bubble:nth-child(4) {
+    left: 40%;
+    animation-delay: 1.5s;
+  }
+  
+  .bubble:nth-child(5) {
+    left: 50%;
+    animation-delay: 2s;
+  }
+  
+  .bubble:nth-child(6) {
+    left: 60%;
+    animation-delay: 2.5s;
+  }
+  
+  .bubble:nth-child(7) {
+    left: 70%;
+    animation-delay: 3s;
+  }
+  
+  .bubble:nth-child(8) {
+    left: 80%;
+    animation-delay: 3.5s;
+  }
+  
+  .bubble:nth-child(9) {
+    left: 90%;
+    animation-delay: 4s;
+  }
+  
